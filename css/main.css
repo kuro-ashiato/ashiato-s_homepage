@@ -1,11 +1,61 @@
-/* visual s*/
+/* visual start*/
 .visual {
     margin-top: 101px;
-    background-image: url("../images/visual_bg.jpg");
+    background-image: url("../img/visual_bg.png");
     background-position: center;
+    background-size: cover;
 }
 
-/* visual e */
+.visual .inner {
+    height: 646px;
+}
+
+.visual .title {
+    position: absolute;
+    top: 88px;
+    left: -10px;
+}
+
+.visual .title .btn {
+    position: absolute;
+    top: 259px;
+    left: 173px;
+}
+
+.visual .cup1.image {
+    position: absolute;
+    bottom: 0;
+    right: -47px;
+}
+
+.visual .cup1.text {
+    position: absolute;
+    top: 38px;
+    right: 171px;
+}
+
+.visual .cup2.image {
+    position: absolute;
+    bottom: 0;
+    right: 162px;
+}
+
+.visual .cup2.text {
+    position: absolute;
+    top: 321px;
+    right: 416px;
+}
+
+.visual .spoon {
+    position: absolute;
+    bottom: 0;
+    left: 275px;
+}
+
+.visual .fade-in {
+    opacity: 0;
+}
+/* visual end */
 
 /* notice s */
 .notice .notice-line {
@@ -351,7 +401,7 @@
     justify-content: center;
     align-items: center;
     z-index: 9;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 #to-top:hover {
