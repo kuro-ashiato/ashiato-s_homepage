@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>카운피아</title>
+
+        <!-- favicons -->
+        <link rel="icon" href="./favicon.png" />
+
+        <!-- reset -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+
+        <!-- icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./css/font.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <!-- cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- gsap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+        <!-- scroll magic -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- js -->
+        <script defer src="./js/youtube.js"></script>
+        <script defer src="./js/common.js"></script>
+        <script defer src="./js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <a href="/" class="logo">
+                    <img src="./img/logo.png" alt="COUNPIA" srcset="" />
+                </a>
+
+                <!-- sub menu s -->
+                <div class="sub-menu">
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:void(0)">Log In</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Sign In</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Find ID/PASSWORD</a>
+                        </li>
+                        <li class="search">
+                            <input type="text" />
+                            <div class="material-icons">search</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sub menu e -->
+
+                <!-- main menu s -->
+                <ul class="main-menu">
+                    <!-- 교원연수 -->
+                    <li class="item">
+                        <div class="item__name">교원연수</div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="inner">
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move"> 직무연수</a></h4>
+                                        <ul>
+                                            <li>전체과정</li>
+                                            <li>인기과정</li>
+                                            <li>2학점 (30시간)</li>
+                                            <li>1학점 (15시간)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move"> 학습후기</a></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move"> 연수안내</a></h4>
+                                        <ul>
+                                            <li>연수일정</li>
+                                            <li>안내공문</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contents__texture">
+                                <div class="inner">
+                                    <h4>교원연수는...</h4>
+                                    <p>교직에 입문한 이후 교육의 이론, 방법 및 직무수행에 필요한 능력 배양을 위해 받는 재교육 과정입니다.</p>
+                                    <p>교원연수의 실적은 연수학점화를 통해 승진평정에 반영됩니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 아카데미 -->
+                    <li class="item">
+                        <div class="item__name">아카데미</div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="inner">
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">전체과정</a></h4>
+                                        <ul>
+                                            <li>전체</li>
+                                            <li>상담이론</li>
+                                            <li>심리치료</li>
+                                            <li>심리검사</li>
+                                            <li>일반교양</li>
+                                            <li>이상심리학 시리즈</li>
+                                            <li>이상심리학 패키지</li>
+                                            <li>이상심리학 9과목</li>
+                                            <li>이상심리학 5과목</li>
+                                            <li>자격증</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">인기과정</a></h4>
+                                        <ul>
+                                            <li>인기과정 1</li>
+                                            <li>인기과정 2</li>
+                                            <li>인기과정 3</li>
+                                            <li>인기과정 4</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contents__texture">
+                                <div class="inner">
+                                    <h4>아카데미는...</h4>
+                                    <p>다양한 지적 욕구를 충족하기 위한 연수로써, 시험 및 평가 없이 자유롭게 수강이 가능한 연수입니다.</p>
+                                    <p>학점인정 및 NEIS 등록이 되지 않는 점에 유의해주시기 바랍니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 북러닝 -->
+                    <li class="item">
+                        <div class="item__name">북러닝</div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="inner">
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">전체과정</a></h4>
+                                        <ul>
+                                            <li>전체</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">인기과정</a></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contents__texture">
+                                <div class="inner">
+                                    <h4>북러닝은...</h4>
+                                    <p>북러닝이겠지요?</p>
+                                    <p>북러닝이랍니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 자격증 -->
+                    <li class="item">
+                        <div class="item__name">자격증</div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="inner">
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">국가자격증</a></h4>
+                                        <ul>
+                                            <li>임상심리사 1급</li>
+                                            <li>임상심리사 2급</li>
+                                            <li>&nbsp</li>
+                                            <li>임상심리사 자격증 안내</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">민간자격증</a></h4>
+                                        <ul>
+                                            <li>진로상담사</li>
+                                            <li>홀랜드 진로상담 전문가 2급</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">자격과정 온라인시험</a></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:void(0)" class="link_move">학지사에듀 부모연수</a></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contents__texture">
+                                <div class="inner">
+                                    <h4>임상심리사란 ?</h4>
+                                    <p>임상심리사는 인간의 심리적 건강 및 효과적인 적응을 다루어 궁극적으로는 심신의 건강 증진을 돕고, 심리적 장애가 있는 사람에게 심리평가와 심리검사, 개인 및 집단 심리상담, 심리재활프로그램의 개발과 실시, 심리학적 교육, 심리학적 지식을 응해 자문을 한다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 카운잡 -->
+                    <li class="item">
+                        <div class="item__name">카운잡</div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="inner">
+                                    <li>
+                                        <h4></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            <a href="javascript:void(0)" class="link_move">이동하기</a>
+                                        </h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contents__texture">
+                                <div class="inner">
+                                    <h4>카운잡</h4>
+                                    <p>카운잡으로 이동하기</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 카운잡 -->
+                    <li class="item">
+                        <div class="item__name">나의 강의실</div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="inner">
+                                    <li>
+                                        <h4></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4></h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            <a href="javascript:void(0)" onclick="alert('로그인을 해주세요.')" class="link_move">이동하기</a>
+                                        </h4>
+                                        <ul>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                            <li>&nbsp</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contents__texture">
+                                <div class="inner">
+                                    <h4>임상심리사란 ?</h4>
+                                    <p>임상심리사는 인간의 심리적 건강 및 효과적인 적응을 다루어 궁극적으로는 심신의 건강 증진을 돕고, 심리적 장애가 있는 사람에게 심리평가와 심리검사, 개인 및 집단 심리상담, 심리재활프로그램의 개발과 실시, 심리학적 교육, 심리학적 지식을 응해 자문을 한다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- main menu e -->
+            </div>
+        </header>
+    </body>
+</html>
