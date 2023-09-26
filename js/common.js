@@ -17,3 +17,8 @@ searchInputEl.addEventListener("blur", function () {
     searchInputEl.setAttribute("placeholder", "");
 });
 // search e
+
+// year start
+const thisYear = document.querySelector(".this-year");
+thisYear.textContent = new Date().getFullYear();
+// year end
