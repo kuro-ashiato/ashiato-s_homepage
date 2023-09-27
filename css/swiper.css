@@ -1,0 +1,29 @@
+#my-swiper {
+    --swiper-navigation-size: 1.6rem;
+    position: relative;
+    width: 1920px;
+}
+
+#my-swiper .swiper-scrollbar {
+    display: none;
+}
+
+#my-swiper .swiper-pagination {
+    position: absolute;
+    bottom: 35px;
+    left: -463px;
+}
+
+#my-swiper .swiper-pagination-bullet {
+    background-color: #666;
+    /* margin: 0 10px; */
+    opacity: 1;
+}
+
+#my-swiper .swiper-pagination-bullet-active {
+    /* 활성화 된 페이지를 나타내는 숫자의 배경색과 글씨 색을 변경합니다. */
+    color: #ffffff;
+    background: var(--color-main);
+    width: 20px;
+    border-radius: 10px;
+}

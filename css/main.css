@@ -1,13 +1,15 @@
 /* visual start*/
 .visual {
     margin-top: 101px;
-    background-image: url("../img/visual_bg.png");
+    /* background-image: url("../img/visual_bg.png"); */
+    background-color: transparent;
     background-position: center;
     background-size: cover;
 }
 
-.visual .inner {
-    height: 646px;
+.visual > .inner {
+    width: 1920px;
+    height: 496px;
 }
 
 .visual .title {

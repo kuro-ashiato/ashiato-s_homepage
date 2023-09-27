@@ -5,6 +5,26 @@ new Swiper(".notice-line .swiper-container", {
     loop: true,
 });
 
+// 신규과정 배너
+new Swiper(".visual .swiper", {
+    slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
+    spaceBetween: 0, // 슬라이드 사이 여백
+    centeredSlides: true, //1번 슬라이드가 가운데 보이기
+    loop: true,
+    autoplay: {
+        delay: 3000, //5초 (기본은 3000)
+    },
+    pagination: {
+        el: ".visual .swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        prevEl: ".visual .swiper-button-prev",
+        nextEl: ".visual .swiper-button-next",
+    },
+});
+
+// 공지사항
 new Swiper(".promotion_noti .swiper-container", {
     slidesPerView: 5, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 20, // 슬라이드 사이 여백
@@ -23,6 +43,7 @@ new Swiper(".promotion_noti .swiper-container", {
     },
 });
 
+// 신규과정
 new Swiper(".promotion .swiper-container", {
     slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10, // 슬라이드 사이 여백
