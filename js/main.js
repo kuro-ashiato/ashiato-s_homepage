@@ -44,9 +44,11 @@ promotionToggleBtn.addEventListener("click", function () {
     if (isHidePromotion) {
         // 숨김 처리 !
         promotionEl.classList.add("hide");
+        promotionToggleBtn.innerHTML = '<div class="material-icons">download</div>';
     } else {
         //숨김 해제!
         promotionEl.classList.remove("hide");
+        promotionToggleBtn.innerHTML = '<div class="material-icons">upload</div>';
     }
 });
 // promotion, promotion Toggle end
