@@ -74,6 +74,21 @@ new Swiper(".awards .swiper-container", {
 });
 // swiper end
 
+// awards
+new Swiper(".awards .swiper-container", {
+    autoplay: true,
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 5,
+    autoplay: {
+        delay: 2000, //5초 (기본은 3000)
+    },
+    navigation: {
+        prevEl: ".awards .swiper-prev",
+        nextEl: ".awards .swiper-next",
+    },
+});
+
 // promotion, promotion Toggle start
 const promotionEl = document.querySelector(".promotion");
 const promotionToggleBtn = document.querySelector(".inner__right .toggle-promotion");
