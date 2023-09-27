@@ -341,7 +341,6 @@ footer .menu li:last-child {
 
 footer .menu li:last-child .family_box {
     width: 0;
-    height: 28px;
     transition: 0.4s ease-in-out;
     display: none;
 }
