@@ -78,10 +78,10 @@ new Swiper(".awards .swiper-container", {
 new Swiper(".awards .swiper-container", {
     autoplay: true,
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
     slidesPerView: 5,
     autoplay: {
-        delay: 2000, //5초 (기본은 3000)
+        delay: 3000, //5초 (기본은 3000)
     },
     navigation: {
         prevEl: ".awards .swiper-prev",

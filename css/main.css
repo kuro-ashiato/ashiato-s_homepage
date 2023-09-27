@@ -549,7 +549,7 @@
 
 /* awards start */
 .awards {
-    background-color: #fff;
+    background-color: #555;
 }
 
 .awards .inner {
@@ -558,7 +558,9 @@
 
 .awards .swiper-container {
     width: 100%;
+    /* padding-left: 30px; */
     height: 40px;
+    /* overflow: hidden; */
 }
 
 .awards .swiper-prev,
@@ -569,11 +571,11 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    border: 2px solid #272727;
+    border: 2px solid #fff;
     border-radius: 50%;
     outline: none;
-    color: #272727;
-    opacity: 0.7;
+    color: #fff;
+    opacity: 0.9;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -590,8 +592,8 @@
 
 .awards .swiper-prev:hover,
 .awards .swiper-next:hover {
-    background-color: #272727;
-    color: #fff;
+    background-color: #fff;
+    color: #666;
 }
 /* awards end */
 
