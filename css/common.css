@@ -306,7 +306,7 @@ footer .menu li::before {
     display: block;
     width: 3px;
     height: 3px;
-    background-color: #555;
+    background-color: #fff;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -324,10 +324,48 @@ footer .menu li a {
     font-size: 12px;
     font-weight: 700;
     padding: 15px;
+    transition: 0.4s;
+}
+
+footer .menu li a:hover {
+    color: var(--color-main);
 }
 
 footer .menu li a.red {
     color: var(--color-main);
+}
+
+footer .menu li:last-child {
+    display: flex;
+}
+
+footer .menu li:last-child .family_box {
+    width: 0;
+    height: 28px;
+    transition: 0.4s ease-in-out;
+    display: none;
+}
+
+footer .menu li:last-child .family_box.open {
+    display: block;
+    width: 530px;
+}
+
+footer .menu li:last-child .family_site {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .menu li:last-child .family_site li {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+
+footer .menu li:last-child .family_site li::before {
+    display: none;
 }
 
 footer .btn-group {

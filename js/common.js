@@ -1,4 +1,4 @@
-// search s
+// search start
 const searchEl = document.querySelector(".search");
 const searchInputEl = searchEl.querySelector("input");
 
@@ -16,7 +16,24 @@ searchInputEl.addEventListener("blur", function () {
     searchEl.classList.remove("focused");
     searchInputEl.setAttribute("placeholder", "");
 });
-// search e
+// search end
+
+// family site start
+// const familySiteEl = document.querySelector(".inner .menu li:last-child > a");
+// const toggleButton = document.querySelector(".toggle-button");
+// const familyBoxEl = document.querySelector(".family_box");
+
+// // 클릭 이벤트 리스너 추가
+// toggleButton.addEventListener("click", function () {
+//     familyBoxEl.classList.toggle("open");
+// });
+
+document.querySelector(".toggle-button").addEventListener("click", function () {
+    const familyBox = document.querySelector(".family_box");
+    familyBox.classList.toggle("open");
+});
+
+// family site end
 
 // year start
 const thisYear = document.querySelector(".this-year");
