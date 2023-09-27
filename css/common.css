@@ -1,4 +1,4 @@
-/* 공통 s */
+/* 공통 start */
 html {
     --color-main: #e83a32;
 }
@@ -33,7 +33,8 @@ a {
 .link_move:hover {
     color: var(--color-main);
 }
-/* button s */
+
+/* button start */
 .btn {
     width: 130px;
     padding: 10px;
@@ -94,12 +95,10 @@ a {
     border-color: var(--color-main);
     background-color: transparent;
 }
-/* button e */
+/* button end */
+/* 공통 end */
 
-/* 공통 e */
-
-/* header s */
-
+/* header start */
 header {
     width: 100%;
     position: fixed;
@@ -121,8 +120,7 @@ header .logo {
     margin: auto;
 }
 
-/* subMenu s */
-
+/* subMenu start */
 header .sub-menu {
     position: absolute;
     top: 10px;
@@ -186,11 +184,9 @@ header .sub-menu .search .material-icons {
     transition: 0.4s;
     cursor: pointer;
 }
+/* subMenu end */
 
-/* subMenu e */
-
-/* mainMenu s */
-
+/* mainMenu start */
 header .main-menu {
     position: absolute;
     top: 62.5px;
@@ -267,11 +263,9 @@ header .main-menu .item .item__contents .contents__texture p {
     color: #000;
     margin: 4px 0 14px; /*상 중 하*/
 }
+/* mainMenu end */
 
-/* mainMenu e */
-
-/* badge s */
-
+/* badge start */
 header .badges {
     position: absolute;
     top: 180px;
@@ -285,9 +279,8 @@ header .badges .badge {
     /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); */
     cursor: pointer;
 }
-/* badge e */
-
-/* header e */
+/* badge end */
+/* header end */
 
 /* footer start*/
 footer {
