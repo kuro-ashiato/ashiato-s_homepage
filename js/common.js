@@ -31,6 +31,13 @@ searchInputEl.addEventListener("blur", function () {
 document.querySelector(".toggle-button").addEventListener("click", function () {
     const familyBox = document.querySelector(".family_box");
     familyBox.classList.toggle("open");
+
+    const toggleButton = document.querySelector(".toggle-button");
+    if (familyBox.classList.contains("open")) {
+        toggleButton.style.color = "#e83a32"; // 원하는 색상 값으로 변경
+    } else {
+        toggleButton.style.color = ""; // open 클래스가 제거되면 기본 색상으로 변경
+    }
 });
 
 // family site end
