@@ -5,6 +5,24 @@ new Swiper(".notice-line .swiper-container", {
     loop: true,
 });
 
+new Swiper(".promotion_noti .swiper-container", {
+    slidesPerView: 5, // 한번에 보여줄 슬라이드 개수
+    spaceBetween: 20, // 슬라이드 사이 여백
+    centeredSlides: true, //1번 슬라이드가 가운데 보이기
+    loop: true,
+    autoplay: {
+        delay: 10000, //5초 (기본은 3000)
+    },
+    pagination: {
+        el: ".promotion_noti .swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        prevEl: ".promotion_noti .swiper-prev",
+        nextEl: ".promotion_noti .swiper-next",
+    },
+});
+
 new Swiper(".promotion .swiper-container", {
     slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10, // 슬라이드 사이 여백
@@ -37,18 +55,34 @@ new Swiper(".awards .swiper-container", {
 
 // promotion, promotion Toggle start
 const promotionEl = document.querySelector(".promotion");
-const promotionToggleBtn = document.querySelector(".toggle-promotion");
+const promotionToggleBtn = document.querySelector(".inner__right .toggle-promotion");
 let isHidePromotion = false;
 promotionToggleBtn.addEventListener("click", function () {
     isHidePromotion = !isHidePromotion; // ! < 반대가 되게 만들어주세요. (true로 바뀜)
     if (isHidePromotion) {
         // 숨김 처리 !
         promotionEl.classList.add("hide");
-        promotionToggleBtn.innerHTML = '<div class="material-icons">download</div>';
+        promotionToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_down</div>';
     } else {
         //숨김 해제!
         promotionEl.classList.remove("hide");
-        promotionToggleBtn.innerHTML = '<div class="material-icons">upload</div>';
+        promotionToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_up</div>';
+    }
+});
+
+const promotionNotiEl = document.querySelector(".promotion_noti");
+const promotionNotiToggleBtn = document.querySelector(".inner__left .toggle-promotion");
+let isHidePromotionNoti = false;
+promotionNotiToggleBtn.addEventListener("click", function () {
+    isHidePromotionNoti = !isHidePromotionNoti; // ! < 반대가 되게 만들어주세요. (true로 바뀜)
+    if (isHidePromotionNoti) {
+        // 숨김 처리 !
+        promotionNotiEl.classList.add("hide");
+        promotionNotiToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_down</div>';
+    } else {
+        //숨김 해제!
+        promotionNotiEl.classList.remove("hide");
+        promotionNotiToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_up</div>';
     }
 });
 // promotion, promotion Toggle end
