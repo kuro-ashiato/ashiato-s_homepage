@@ -320,7 +320,7 @@
 }
 
 .notice .promotion {
-    height: 693px;
+    height: 623px;
     position: relative;
     background: #fff;
     transition: height 0.4s;
@@ -342,7 +342,7 @@
 
 .notice .promotion .swiper-container {
     width: 2477px;
-    height: 553px;
+    height: 484px;
     position: absolute;
     top: 80px;
     left: 50%;
