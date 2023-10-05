@@ -560,13 +560,15 @@
 }
 
 .awards .swiper-container {
+    border-right: 1px solid #444;
+    border-left: 1px solid #444;
     width: 100%;
     /* padding-left: 30px; */
     height: 40px;
     /* overflow: hidden; */
 }
 
-.awards .swiper-prev,
+/* .awards .swiper-prev,
 .awards .swiper-next {
     width: 42px;
     height: 42px;
@@ -583,7 +585,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .awards .swiper-prev {
     left: -100px;

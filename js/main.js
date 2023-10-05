@@ -1,18 +1,19 @@
-// new Swiper(선택자,옵션)
+// new Swiper(선택자,옵션) NOTICE
 new Swiper(".notice-line .swiper-container", {
     direction: "vertical",
-    autoplay: true,
+    autoplay: {},
     loop: true,
 });
 
-// 신규과정 배너
+// visual
 new Swiper(".visual .swiper", {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 0, // 슬라이드 사이 여백
     centeredSlides: true, //1번 슬라이드가 가운데 보이기
     loop: true,
     autoplay: {
-        delay: 3000, //5초 (기본은 3000)
+        delay: 2500, //5초 (기본은 3000)
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".visual .swiper-pagination",
@@ -31,7 +32,8 @@ new Swiper(".promotion_noti .swiper-container", {
     centeredSlides: true, //1번 슬라이드가 가운데 보이기
     loop: true,
     autoplay: {
-        delay: 10000, //5초 (기본은 3000)
+        delay: 5000, //5초 (기본은 3000)
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".promotion_noti .swiper-pagination",
@@ -43,7 +45,7 @@ new Swiper(".promotion_noti .swiper-container", {
     },
 });
 
-// 신규과정
+// 이벤트
 new Swiper(".promotion .swiper-container", {
     slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10, // 슬라이드 사이 여백
@@ -51,6 +53,7 @@ new Swiper(".promotion .swiper-container", {
     loop: true,
     autoplay: {
         delay: 5000, //5초 (기본은 3000)
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".promotion .swiper-pagination",
@@ -62,16 +65,16 @@ new Swiper(".promotion .swiper-container", {
     },
 });
 
-new Swiper(".awards .swiper-container", {
-    autoplay: true,
-    loop: true,
-    spaceBetween: 30,
-    slidesPerView: 5,
-    navigation: {
-        prevEl: ".awards .swiper-prev",
-        nextEl: ".awards .swiper-next",
-    },
-});
+// new Swiper(".awards .swiper-container", {
+//     autoplay: true,
+//     loop: true,
+//     spaceBetween: 30,
+//     slidesPerView: 5,
+//     navigation: {
+//         prevEl: ".awards .swiper-prev",
+//         nextEl: ".awards .swiper-next",
+//     },
+// });
 // swiper end
 
 // awards
@@ -81,8 +84,10 @@ new Swiper(".awards .swiper-container", {
     spaceBetween: 20,
     slidesPerView: 5,
     autoplay: {
-        delay: 3000, //5초 (기본은 3000)
+        delay: 0, //5초 (기본은 3000)
+        disableOnInteraction: false,
     },
+    speed: 5000,
     navigation: {
         prevEl: ".awards .swiper-prev",
         nextEl: ".awards .swiper-next",
