@@ -98,11 +98,11 @@ promotionToggleBtn.addEventListener("click", function () {
     if (isHidePromotion) {
         // 숨김 처리 !
         promotionEl.classList.add("hide");
-        promotionToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_down</div>';
+        promotionToggleBtn.innerHTML = '<div class="material-icons">expand_more</div>';
     } else {
         //숨김 해제!
         promotionEl.classList.remove("hide");
-        promotionToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_up</div>';
+        promotionToggleBtn.innerHTML = '<div class="material-icons">expand_less</div>';
     }
 });
 
@@ -114,11 +114,11 @@ promotionNotiToggleBtn.addEventListener("click", function () {
     if (isHidePromotionNoti) {
         // 숨김 처리 !
         promotionNotiEl.classList.add("hide");
-        promotionNotiToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_down</div>';
+        promotionNotiToggleBtn.innerHTML = '<div class="material-icons">expand_more</div>';
     } else {
         //숨김 해제!
         promotionNotiEl.classList.remove("hide");
-        promotionNotiToggleBtn.innerHTML = '<div class="material-icons">arrow_circle_up</div>';
+        promotionNotiToggleBtn.innerHTML = '<div class="material-icons">expand_less</div>';
     }
 });
 // promotion, promotion Toggle end

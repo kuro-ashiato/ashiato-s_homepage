@@ -18,12 +18,13 @@
     background-color: #666;
     /* margin: 0 10px; */
     opacity: 1;
+    border: 1px solid #cacaca;
 }
 
 #my-swiper .swiper-pagination-bullet-active {
     /* 활성화 된 페이지를 나타내는 숫자의 배경색과 글씨 색을 변경합니다. */
     color: #ffffff;
-    background: var(--color-main);
-    width: 20px;
+    background: #cacaca;
+    width: 40px;
     border-radius: 10px;
 }
