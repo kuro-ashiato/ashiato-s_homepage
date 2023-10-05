@@ -138,9 +138,10 @@ window.addEventListener( "scroll", _.throttle(function () {
     if (window.scrollY > 250) {
       // 배지 숨기기
       // gsap.to(요소, 지속시간, 옵션)
-      gsap.to(badgeEl, 0.4, {
-        opacity: 0,
-        display: "none",
+      gsap.to(badgeEl, 0.6, {
+          opacity: 0,
+          x:130,
+        // display: "none",
       });
       // 버튼 보이기
        gsap.to(toTopEl, 0.6, {
@@ -148,9 +149,10 @@ window.addEventListener( "scroll", _.throttle(function () {
        });
     } else {
       // 배지 보이기
-      gsap.to(badgeEl, 0.4, {
-        opacity: 1,
-        display: "block",
+      gsap.to(badgeEl, 0.6, {
+          opacity: 1,
+          x:0,
+        // display: "block",
       });
       // 버튼 숨기기
       gsap.to(toTopEl, 0.5, {

@@ -302,8 +302,8 @@ header .main-menu .item .item__contents .contents__texture p {
 /* badge start */
 header .badges {
     position: absolute;
-    top: 180px;
-    right: 12px;
+    top: 101px;
+    right: 1px;
 }
 
 header .badges .badge {
