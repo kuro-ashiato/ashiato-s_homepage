@@ -1,7 +1,7 @@
 /* 공통 start */
 html {
     --color-main: #666;
-    background-color: #666;
+    /* background-color: #666; */
 }
 
 body {
@@ -123,6 +123,7 @@ header {
     background-color: rgba(225, 225, 225, 0.8);
     border-bottom: 1px solid #c8c8c8;
     z-index: 11;
+    transition: background-color 0.5s;
 }
 
 header > .inner {
@@ -142,6 +143,7 @@ header .logo {
 
 header .logo img {
     margin-right: 15px;
+    transition: filter 0.5s;
 }
 
 header .logo span {
@@ -151,6 +153,7 @@ header .logo span {
     color: #000;
     left: 60px;
     bottom: 0;
+    transition: 0.5s;
 }
 
 /* subMenu start */
@@ -176,6 +179,7 @@ header .sub-menu ul.menu li a {
     padding: 11px 16px;
     color: #656565;
     font-weight: 600;
+    transition: color 0.5s;
 }
 
 header .sub-menu ul.menu li a:hover {
@@ -213,6 +217,7 @@ header .sub-menu .search .material-icons {
     position: absolute;
     top: 0;
     bottom: 0;
+    color: #656565;
     right: 5px;
     margin: auto;
     transition: 0.4s;
@@ -233,6 +238,7 @@ header .main-menu .item .item__name {
     padding: 8px 20px 8px 20px;
     font-size: 15px;
     font-weight: bold;
+    transition: color 0.5s;
 }
 
 header .main-menu .item:hover .item__name {

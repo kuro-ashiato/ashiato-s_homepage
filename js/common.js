@@ -1,3 +1,41 @@
+// header scroll
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    const subMenuLinks = document.querySelectorAll(".sub-menu a");
+    const mainMenuItems = document.querySelectorAll(".main-menu .item__name");
+    const materialIcons = document.querySelectorAll(".sub-menu .material-icons");
+    const scrollY = window.scrollY;
+
+    // 스크롤 위치에 따라 배경색 변경
+    if (scrollY > 50) {
+        header.style.backgroundColor = "rgba(0,0,0,0.7)";
+        document.querySelector(".logo img").style.filter = "invert(1)";
+        document.querySelector(".logo span").style.color = "#fff";
+        subMenuLinks.forEach((link) => {
+            link.style.color = "#fff"; // 흰색으로 변경
+        });
+        materialIcons.forEach((icon) => {
+            icon.style.color = "#fff"; // 흰색으로 변경
+        });
+        mainMenuItems.forEach((item) => {
+            item.style.color = "#fff";
+        });
+    } else {
+        header.style.backgroundColor = "rgba(225, 225, 225, 0.8)";
+        document.querySelector(".logo img").style.filter = "invert(0)";
+        document.querySelector(".logo span").style.color = "#000";
+        subMenuLinks.forEach((link) => {
+            link.style.color = "#656565"; // 초기 색상으로 변경
+        });
+        materialIcons.forEach((icon) => {
+            icon.style.color = "#656565"; // 초기 색상으로 변경
+        });
+        mainMenuItems.forEach((item) => {
+            item.style.color = "#666";
+        });
+    }
+});
+
 // search start
 const searchEl = document.querySelector(".search");
 const searchInputEl = searchEl.querySelector("input");
