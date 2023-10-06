@@ -143,7 +143,12 @@ header .logo {
 
 header .logo img {
     margin-right: 15px;
-    transition: filter 0.5s;
+    transition: 2.4s;
+}
+
+header .logo img:hover {
+    transform: rotateY(540deg);
+    /* transform: rotateX(900deg); */
 }
 
 header .logo span {
