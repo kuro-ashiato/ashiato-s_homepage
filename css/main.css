@@ -507,6 +507,12 @@
     margin-top: calc(1920px * 9 / 16 / -2);
 }
 
+.youtube .youtube__area video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
 .youtube .youtube__area::before {
     content: "";
     display: block;

@@ -7,19 +7,19 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
-function onYouTubeIframeAPIReady() {
-    // player 라는 ID값
-    new YT.Player("player", {
-        videoId: "R9mXtzn8meE", // 최초 재생할 유튜브 영상 ID
-        playerVars: {
-            autoplay: true, //자동 재생 유무
-            loop: true, // 반복 재생 유무
-            playlist: "R9mXtzn8meE", // 반복 재생할 유튜브 영상 ID 목록
-        },
-        events: {
-            onReady: function (event) {
-                event.target.mute(); // 음소거
-            },
-        },
-    });
-}
+// function onYouTubeIframeAPIReady() {
+//     // player 라는 ID값
+//     new YT.Player("player", {
+//         videoId: "R9mXtzn8meE", // 최초 재생할 유튜브 영상 ID
+//         playerVars: {
+//             autoplay: true, //자동 재생 유무
+//             loop: true, // 반복 재생 유무
+//             playlist: "R9mXtzn8meE", // 반복 재생할 유튜브 영상 ID 목록
+//         },
+//         events: {
+//             onReady: function (event) {
+//                 event.target.mute(); // 음소거
+//             },
+//         },
+//     });
+// }
