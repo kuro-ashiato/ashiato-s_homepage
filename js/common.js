@@ -25,6 +25,12 @@ window.addEventListener("scroll", () => {
         });
         mainMenuItems.forEach((item) => {
             item.style.color = "#fff";
+            item.addEventListener("mouseenter", () => {
+                item.style.color = "#fff"; // hover 상태에서의 색상
+            });
+            item.addEventListener("mouseleave", () => {
+                item.style.color = "#fff"; // hover 상태에서 빠져나왔을 때의 색상
+            });
         });
     } else {
         header.style.backgroundColor = "rgba(225, 225, 225, 0.8)";
@@ -43,7 +49,13 @@ window.addEventListener("scroll", () => {
             icon.style.color = "#656565"; // 초기 색상으로 변경
         });
         mainMenuItems.forEach((item) => {
-            item.style.color = "#666";
+            item.style.color = "#333";
+            item.addEventListener("mouseenter", () => {
+                item.style.color = "#666"; // hover 상태에서의 색상
+            });
+            item.addEventListener("mouseleave", () => {
+                item.style.color = "#333"; // hover 상태에서 빠져나왔을 때의 색상
+            });
         });
     }
 });
