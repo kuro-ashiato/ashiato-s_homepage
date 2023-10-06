@@ -13,6 +13,12 @@ window.addEventListener("scroll", () => {
         document.querySelector(".logo span").style.color = "#fff";
         subMenuLinks.forEach((link) => {
             link.style.color = "#fff"; // 흰색으로 변경
+            link.addEventListener("mouseenter", () => {
+                link.style.color = "#fff"; // hover 상태에서의 색상
+            });
+            link.addEventListener("mouseleave", () => {
+                link.style.color = "#fff"; // hover 상태에서 빠져나왔을 때의 색상
+            });
         });
         materialIcons.forEach((icon) => {
             icon.style.color = "#fff"; // 흰색으로 변경
@@ -26,6 +32,12 @@ window.addEventListener("scroll", () => {
         document.querySelector(".logo span").style.color = "#000";
         subMenuLinks.forEach((link) => {
             link.style.color = "#656565"; // 초기 색상으로 변경
+            link.addEventListener("mouseenter", () => {
+                link.style.color = "#000"; // hover 상태에서의 색상
+            });
+            link.addEventListener("mouseleave", () => {
+                link.style.color = "#656565"; // hover 상태에서 빠져나왔을 때의 색상
+            });
         });
         materialIcons.forEach((icon) => {
             icon.style.color = "#656565"; // 초기 색상으로 변경
