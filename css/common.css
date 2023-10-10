@@ -1,10 +1,11 @@
 /* 공통 start */
 html {
     --color-main: #666;
-    /* background-color: #666; */
+    background-color: #999;
 }
 
 body {
+    padding-top: 101px;
     color: #333;
     font-size: 16px;
     font-weight: 400;
