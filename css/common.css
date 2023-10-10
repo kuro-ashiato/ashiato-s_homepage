@@ -142,6 +142,8 @@ header .logo {
 }
 
 header .logo img {
+    width: 56px;
+    height: 56px;
     margin-right: 15px;
     transition: filter 0.4s, transform 2.4s;
     /* transition: transform 2.4s; */
